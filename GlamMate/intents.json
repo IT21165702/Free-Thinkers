@@ -1,0 +1,112 @@
+{
+  "intents": [
+      {
+          "tag": "greeting",
+          "patterns": [
+              "Hi",
+              "Hello",
+              "Hey there",
+              "Good day"
+          ],
+          "responses": [
+              "Hello! How can I assist you today?",
+              "Hi there! How can I help you?",
+              "Hey! What brings you here today?"
+          ]
+      },
+      {
+          "tag": "product_info",
+          "patterns": [
+              "Tell me about your products",
+              "What do you sell?",
+              "Show me your products",
+              "I want to see your catalog"
+          ],
+          "responses": [
+              "We offer a wide range of products, including clothing, electronics, home decor, and more. How can I assist you with your shopping?"
+          ]
+      },
+      {
+          "tag": "product_search",
+          "patterns": [
+              "Find me [product_type]",
+              "I'm looking for [product_type]",
+              "Show me [product_type]"
+          ],
+          "responses": [
+              "Sure, I can help you find [product_type]. Please provide more details or use our search feature on our website."
+          ]
+      },
+      {
+          "tag": "order_status",
+          "patterns": [
+              "Where's my order?",
+              "What's the status of my order?",
+              "Can you track my order?"
+          ],
+          "responses": [
+              "To check your order status, please provide your order number, and I'll assist you with that."
+          ]
+      },
+      {
+          "tag": "shipping_info",
+          "patterns": [
+              "How long does shipping take?",
+              "When will my order arrive?",
+              "Tell me about your shipping"
+          ],
+          "responses": [
+              "Shipping typically takes [shipping_duration] days. Please note that shipping times may vary based on your location."
+          ]
+      },
+      {
+          "tag": "payment_methods",
+          "patterns": [
+              "What are your accepted payment methods?",
+              "Can I pay with [payment_method]?",
+              "How can I make a payment?"
+          ],
+          "responses": [
+              "We accept various payment methods, including credit cards, debit cards, PayPal, and more. You can choose your preferred payment option during checkout."
+          ]
+      },
+      {
+          "tag": "return_policy",
+          "patterns": [
+              "What is your return policy?",
+              "Can I return a product?",
+              "How do returns work?"
+          ],
+          "responses": [
+              "Our return policy allows returns within [return_duration] days. We aim to make the return process hassle-free for our customers."
+          ]
+      },
+      {
+          "tag": "discounts_promotions",
+          "patterns": [
+              "Are there any ongoing promotions?",
+              "Tell me about discounts",
+              "Do you have any special offers?"
+          ],
+          "responses": [
+              "Yes, we often have promotions and discounts available. Visit our website to see our current offers."
+          ]
+      },
+      {
+          "tag": "thanks",
+          "patterns": [
+              "Thank you",
+              "Thanks a lot",
+              "Appreciate your help"
+          ],
+          "responses": [
+              "You're welcome! If you have more questions or need assistance, feel free to ask."
+          ]
+      },
+      {
+          "tag": "goodbye",
+          "patterns": ["Goodbye", "Bye", "See you later"],
+          "responses": ["Goodbye! Have a great day.", "Goodbye. Take care!"]
+      }
+  ]
+}
