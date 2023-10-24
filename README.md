@@ -1,4 +1,4 @@
-# E commerce Chatbot
+# E commerce Chatbot - GlamMate
 IRWA Project - 2023
 Free Thinkers
 1. V.U.Jithma
