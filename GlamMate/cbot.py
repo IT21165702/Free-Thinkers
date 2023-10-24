@@ -140,6 +140,8 @@ EntryBox.bind("<Return>", send)
 
 
 
+
+
 scrollbar.place(x=775,y=6, height=800)
 line.place(x=0,y=35, height=1, width=770)
 ChatLog.place(x=5,y=40, height=700, width=770)
@@ -234,7 +236,7 @@ base.configure(width=800, height=800, bg=BG_COLOR)
 ChatLog = Text(base, bd=0, bg=BG_COLOR, fg=TEXT_COLOR, font=FONT_BOLD)
 ChatLog.config(state=DISABLED)
 
-head_label = Label(base, bg=BG_COLOR, fg=TEXT_COLOR, text="Welcome to Glow Trend Beauty Chatbot", font=FONT_BOLD, pady=10)
+head_label = Label(base, bg=BG_COLOR, fg=TEXT_COLOR, text="Welcome to E-Commerce Chatbot", font=FONT_BOLD, pady=10)
 head_label.place(relwidth=1)
 
 line = Label(base, width=450, bg=BG_GRAY)
