@@ -1,0 +1,30 @@
+* How does the chatbot handle situations where it cannot provide a 
+ satisfactory response?
+
+
+* the products available under a category 
+
+	SELECT p.product_name, p.price FROM products p INNER JOIN categories c ON p.categoryID = c.idcategories WHERE c.catergories_name = 'Your_Category_Name';
+
+* product prices
+
+	select price from products where idproducts = 
+
+* details of the products individually
+
+	select product_name,description,price from products where product_name = 
+ 
+
+* promotions applied for the products(details)
+
+	SELECT p.product_name, p.price, pr.discount_value FROM products p INNER JOIN promotions pr ON p.idproducts = pr.productID WHERE p.product_name = 'Your_Product_Name';
+	
+	SELECT p.product_name,  p.price,  pr.discount_value FROM  products p LEFT JOIN promotions pr ON p.idproducts = pr.productID WHERE  p.product_name = 'Your_Product_Name';
+	
+	****** promotion eke % mark ekak danna oni amount eka pennaddi ******
+
+* the categories
+	select * from categories
+
+
+
