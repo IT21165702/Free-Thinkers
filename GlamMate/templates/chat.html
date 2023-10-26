@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GlamMate Chatbot</title>
+    <script>
+        var chatLog = document.getElementById("chat-log");
+        var entryBox = document.getElementById("entry-box");
+        var sendButton = document.getElementById("send-button");
+    
+        sendButton.addEventListener("click", function () {
+            var message = entryBox.value;
+            if (message.trim() !== '') {
+                chatLog.innerHTML += "You: " + message + '<br>';
+                entryBox.value = '';
+    
+                // Send the message to the server using AJAX and update the chat log
+                // You'll need to implement this part using JavaScript and a Flask route.
+            }
+        });
+    </script>    
+</head>
+<body>
+    <div style="background-color: #c5f0e3;">
+        <div>
+            <img src="{{ url_for('static', filename='avatar.jpg') }}" style="width: 50px; height: 50px; float: left; margin: 10px 5px 10px 10px;">
+            <h1 style="color: #000000; font-size: 16px; font-weight: bold; padding: 10px;">Welcome to GlamMate Chatbot</h1>
+        </div>
+        <div style="background-color: #c5f0e3;">
+            <div style="background-color: #6ac99d; float: left; width: 80%; padding: 10px;">
+                <div id="chat-log" style="background-color: #6ac99d; color: #000000; font-family: Lato, sans-serif; font-size: 12px; overflow-y: auto; height: 300px;">
+                </div>
+                <div>
+                    <input id="entry-box" style="background-color: white; font-family: Lato, sans-serif; font-size: 18px; width: 50%;" type="text" placeholder="Type your message">
+                    <button id="send-button" style="font-family: Lato, sans-serif; font-size: 16px; font-weight: bold; background-color: #c79991; color: white;">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
